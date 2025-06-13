@@ -564,7 +564,8 @@ html {
        width: 100%;/* or soft-light, multiply, depending on your image */
        min-height: 140vh;
     padding: 80px 20px;
-    position: relative; /* For potential pseudo-elements if using CSS pattern */
+    position: relative; 
+    margin-bottom: 10%;/* For potential pseudo-elements if using CSS pattern */
 }
 
 /* Optional: If you want a subtle CSS pattern instead of an image */
