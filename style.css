@@ -19,7 +19,7 @@ html {
     scroll-behavior: smooth;
 }
 
-:root{
+: root{
     --main-color:#bad682;
     --second-color:#3b843f;
     --third-color:#e4783a;
@@ -989,7 +989,7 @@ html {
         /* You might want to adjust height for mobile */
         height: 40vh;
         margin-top: 40px; /* Adjust if navbar height changes on mobile */
-        height: calc(85vh - 400px); /* Adjust based on mobile navbar height */
+        height: calc(80vh - 400px); /* Adjust based on mobile navbar height */
         display: flex;
         margin-bottom: -1%;
     }
