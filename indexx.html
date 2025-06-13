@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add a font library like Google Fonts if you want specific fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://img.icons8.com/material-sharp/24/3b843f/button2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+ <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <div class="logo-icon">
+                    <!-- 
+                        Replace this with your actual SVG or image icon.
+                        This is a simple placeholder. 
+                        You can use an <img> tag: <img src="your-logo-icon.svg" alt="Brand Icon">
+                        Or an inline SVG.
+                    -->
+                    <img src="logo1.png" alt="">
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">ABOUT US</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link">PRODUCT</a></li>
+                    <li class="nav-item"><a href="#shop" class="nav-link">SHOP</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger-button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- home -->
+     <main>
+        <section class="hero-video-section">
+            <video autoplay muted loop playsinline class="hero-video-bg" id="bgVideo">
+                <!--
+                    IMPORTANT: Replace 'videos/your-video.mp4' with the actual path to your video.
+                    You can provide multiple sources for different video formats for better browser compatibility.
+                -->
+                <source src="video1.mp4" type="video/mp4">
+                <!-- <source src="videos/your-video.webm" type="video/webm"> -->
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Other content sections can go here -->
+    <section id="about" class="about-us-section">
+            <div class="about-us-content">
+                <h2>ABOUT US</h2>
+                <p>
+                    Alam Nusantara Coconut diciptakan untuk
+                    menghadirkan pilihan baru bagi penikmat
+                    minuman golongan B. Dengan rasa kelapa
+                    yang khas, kami memberikan pengalaman
+                    berbeda yang lebih segar dan inovatif.
+                </p>
+            </div>
+            <div><img src="Eclipse.png" alt="">
+            </div>
+        </section>
+
+        <!-- product -->
+      <section class="product" id="product">
+        <div class="product-bg">  
+     <div class="daun">
+                <img src="Daun png.png" alt="">
+    </div>
+          <div class="product-card-container">
+        <div class="product-info">
+            <h1>Alam Nusantara<br>Coconut Liqueur</h1>
+            <ul>
+                <li><strong>Jenis:</strong> Minuman Alkohol Golongan B</li>
+                <li><strong>Isi Bersih:</strong> 600 ml</li>
+                <li><strong>Kadar Alkohol:</strong> +-20%</li>
+                <li><strong>Rasa:</strong> Kelapa Tropis Autentik</li>
+                <li><strong>Karakter Rasa:</strong> Manis, ringan, menyegarkan</li>
+            </ul>
+            <p class="product-description">Cocok dikombinasikan dengan berbagai minuman lain</p>
+            <hr>
+            <a href="#shop" class="try-now-button">Try It Now!</a>
+        </div>
+        <div class="product-image-area">
+            <img src="FOTOPRODUCT.jpg" alt="Alam Nusantara Coconut Liqueur bottle and glass">
+        </div>
+        
+    </div>
+
+    </div>
+      </section>
+
+           <!-- product 2 -->
+    <section id="product" class="product-showcase-section">
+            <div class="product-showcase-content">
+                
+                <div class="product-image-container">
+                    <img src="product2.png" alt="Alam Nusantara Coconut Liqueur Bottles" class="product-bottles-image">
+                    <!-- IMPORTANT: Replace with your actual image path. 
+                         This image should be a PNG with a transparent background. -->
+                </div>
+            </div>
+        </section>
+
+            <!-- tagline -->
+        <section id="tagline" class="tagline-section">
+            <div class="tagline-content">
+                <h2>WHY CHOOSE ALAM NUSANTARA</h2>
+            </div>
+            <div><img src="WHYCHOOSE.png" alt="">
+            </div>
+        </section>
+
+            <!-- shop -->
+   <section id="shop" class="shop-section">
+            <div class="shop-container">
+                <h2 class="shop-title">SHOP</h2>
+                <div class="shop-cards-container">
+                    <a href="https://tokopedia.link/UNdPu5JDjTb" class="shop-card" target="_blank" rel="noopener noreferrer">
+                        <div class="shop-card-icon-container">
+                            <img src="TOKPED.png" alt="Tokopedia Logo" class="shop-card-icon">
+                            <!-- Make sure you have this image in your images folder -->
+                        </div>
+                        <span class="shop-card-button">Tokopedia</span>
+                    </a>
+
+                    <a href="https://wa.me/6281219997808" class="shop-card" target="_blank" rel="noopener noreferrer">
+                        <div class="shop-card-icon-container">
+                            <img src="WA.png" alt="WhatsApp Logo" class="shop-card-icon">
+                            <!-- Make sure you have this image in your images folder -->
+                        </div>
+                        <span class="shop-card-button">Whatsapp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <section id ="banner" class="banner-section">
+            <div class="banner-container">
+                <img src="bannerweb.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- instagram -->
+        <section id="instagram" class="instagram-section">
+            <div class="instagram-container">
+                <h2 class="instagram-title">INSTAGRAM</h2>
+                <div class="instagram-grid">
+
+                       <div class="elfsight-app-5030657f-a0b3-4723-9453-b4cf5b488928" data-elfsight-app-lazy></div>
+
+                </div>
+            </div>
+        </section>
+
+         <!-- footer -->
+       <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="logo">
+                    <img src="Logo2.png" alt="Alam Nusantara Logo">
+                     
+                </a>
+                <p class="footer-tagline">Teman setiap cerita</p>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/alamnusantara_official/" aria-label="Instagram" aria-label="Instagram"><i class="fab fa-instagram fa-bounce"></i></a>
+                    <a href="https://www.tiktok.com/@alamnusantara.official" aria-label="Tiktok"><i class="fab fa-tiktok fa-bounce"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61571532638927&mibextid=wwXIfr&rdid=RHINa6aeOWGm64Z1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ACs7ezgMk%2F%3Fmibextid%3DwwXIfr#" aria-label="Facebook"><i class="fab fa-facebook-f fa-bounce"></i></a>
+                    <a href="https://www.threads.com/@alamnusantara_official" aria-label="Threads"><i class="fab fa-threads fa-bounce"></i></a>
+                    <a href="https://x.com/sobattenggak" aria-label="X"><i class="fab fa-x-twitter fa-bounce"></i></a>
+                    <a href="https://www.youtube.com/@ALAMNUSANTARA.OFFICIAL" aria-label="Youtube"><i class="fab fa-square-youtube fa-bounce"></i></a>
+                </div>
+                <p class="footer-location">Jakarta, Indonesia</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <script src="script.js"></script>
+</body>
+</html>

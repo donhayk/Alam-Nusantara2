@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for links */
+    line-height: 1.6;
+    background-color: #fff; /* Assuming a white background from image */
+    color: #333;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#bad682;
+    --second-color:#3b843f;
+    --third-color:#e4783a;
+    --font-main: font-family: "Bricolage Grotesque", sans-serif;
+    --font-second: font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    background-color: #fff;
+    padding: 1% 0; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    position: fixed; /* Or 'sticky' if you want it to stick on scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.navbar-container {
+    max-width: 2000px; /* Adjust for desired max width */
+    margin: 0;
+    margin-left: 1%;
+    padding: 0 20px; /* Padding on the sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.navbar-logo {
+    display: flex;
+    flex-direction: column; /* Icon above text */
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Black text for logo */
+}
+
+.logo-icon img { /* Or .logo-icon img */
+    width: 20%; /* Adjust icon size */
+    height: 20%;
+    justify-content: center;/* Space between icon and text */
+    color: #000; /* Or your icon's color */
+}
+
+
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex; /* Shown by default on desktop */
+    margin-right: 3%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 35px; /* Spacing between nav items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333; /* Nav link color */
+    font-weight: 500;
+    font-size: 1.2em;
+    text-transform: uppercase; /* As seen in image */
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    font-family: var(--font-second);
+}
+
+.nav-link:hover {
+    color: #777; /* Hover color */
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    margin-left: -100%;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-header {
+    background-color: var(--text-light);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-green);
+    font-weight: 800;
+}
+.logo img { height: 50px; margin-right: 10px; }
+.logo span { font-size: 0.8rem; line-height: 1.1; }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--dark-green);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark-green);
+}
+
+/* --- Hero Video Section Styles --- */
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    height: calc(120vh - 70px); /* Full viewport height minus approximate navbar height */
+    /* Adjust 70px if your navbar height is different */
+    /* Or use a fixed height: height: 600px; */
+    overflow: hidden; /* Prevents scrollbars from video if aspect ratio mismatches */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px; /* Adjust this to match your navbar's actual height to prevent overlap */
+}
+
+.hero-video-bg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Covers the area, cropping if necessary */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Behind the overlay content */
+}
+
+.video-overlay-content {
+    position: relative; /* Or absolute if you need more precise control relative to .hero-video-section */
+    z-index: 2; /* Above the video */
+    text-align: center;
+    padding: 20px;
+    /* Background for readability, adjust as needed */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* border-radius: 8px; */
+}
+
+.video-overlay-content h1 {
+    font-size: 6rem; /* Large text as in image */
+    font-weight: bold;
+    color: #707070; /* Greyish color from the image */
+    /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); */ /* Optional shadow for better readability */
+    line-height: 1;
+    text-transform: capitalize; /* "Video" is capitalized */
+}
+
+/* --- About Us Section Styles --- */
+.about-us-section {
+    background-color:var(--main-color); /* Light green from image */
+    color: #FFFFFF; /* White text */
+    padding: 80px 20px; /* Generous padding */
+    text-align: center;
+}
+
+.about-us-content {
+    max-width: 1100px; /* Control max width of content */
+    margin: 0 auto; /* Center the content block */
+}
+
+.about-us-section h2 {
+    font-size: 6.5rem; /* Large, bold heading */
+    font-weight: 900; /* Extra bold, use a font weight that supports this (Roboto 900) */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: var(--font-main);
+}
+
+.about-us-section p {
+    font-size: 2.5rem; /* Readable paragraph text */
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 1100px; /* Slightly narrower than the content block for visual balance */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-second);
+    padding: 5px;
+}
+.about-us-section img {
+    padding-bottom: 0%;
+    margin-top: 2%;
+    margin-bottom: -10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.product-bg {
+    background-color: var(--second-color);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.daun img {
+        margin-top: -19%;
+        padding-bottom: 8%;
+        width: 100%;
+}
+
+ .product-card-container {
+            display: flex;
+            max-width: 100%; /* Adjust as needed */
+            width: 80%;
+            background-color:black; /* Base for rounded corners */
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* Crucial for keeping image side contained */
+            margin: auto;
+            margin-top: -75%;
+            margin-bottom: 12%;
+        }
+
+        .product-info {
+            flex-basis: 55%; /* Adjust ratio as needed */
+            padding: 40px 30px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-info h1 {
+            font-size: 2.2em; /* Adjust size */
+            font-weight: 900;
+            color: var(--second-color);
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            font-family: var(--font-second);
+        }
+        
+        .product-info ul {
+            list-style-type: disc;
+            display: list-item;
+            margin-left: 3%;
+            padding: 0;
+            margin-bottom: 25px;
+            color: var(--second-color);
+            font-family: var(--font-second);
+            font-weight: 500;
+        }
+
+        .product-info li {
+            font-size: 1em;
+            color: var(--text-light-gray);
+            margin-bottom: 10px;
+            line-height: 1.5;
+            list-style-type: disc;
+            display: list-item;
+        }
+
+        .product-info li strong {
+            font-weight: 700;
+            color: var(--text-dark-green); /* Key text is darker/bolder */
+        }
+
+        .product-description {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            margin-top: 30%;
+            color: var(--second-color);
+            font-family: var(--font-second);
+        }
+
+        .product-info hr {
+            border: 0;
+            height: 2px;
+            background-color: var(--main-color);
+            margin-bottom: 25px;
+        }
+
+        .try-now-button {
+            background-color: var(--second-color);
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 8px;
+            text-align: center;
+            display: inline-block;
+            align-self: flex-start; /* Aligns button to the start */
+            transition: background-color 0.3s ease;
+            font-family: var(--font-second);
+        }
+
+        .try-now-button:hover {
+            background-color:var(--main-color); /* Darker shade on hover */
+        }
+
+        .product-image-area {
+            flex-basis: 45%; /* Adjust ratio */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px; /* Padding around the image */
+        }
+
+        .product-image-area img {
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            max-height: 100vh;
+        }
+
+     
+
+        .product2 {
+            background-color: var(--main-color);
+        }
+
+        .about-us-content {
+            max-width: 1100px; /* Control max width of content */
+            margin: 0 auto; /* Center the content block */
+        }
+/* --- Product Showcase Section Styles --- */
+.product-showcase-section {
+    padding: 40px 20px 40px; /* Top padding, side padding, bottom padding */
+    background-color: var(--main-color); /* Base light green from image */
+    text-align: center;; /* For potential absolute positioning of elements if needed */
+    overflow: hidden; /* To contain any decorative elements that might overflow */
+
+}
+
+.product-showcase-content {
+    max-width: 100%; /* Max width for the content area */
+    margin: 0 auto;
+    position: relative; /* For stacking context if needed */
+    z-index: 2;
+}
+
+.product-image-container {
+    margin-top: 10%; /* Space above the image */
+}
+
+.product-bottles-image {
+    max-width: 100%; /* Make image responsive */
+    height: auto;   /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-height: 100%; /* Limit max height of the image */
+}
+
+/* --- Tagline Section Styles --- */
+.tagline-section {
+    background-color:var(--second-color); /* Light green from image */
+    color: #FFFFFF; /* White text */
+    padding: 80px 20px; /* Generous padding */
+    text-align: center;
+}
+
+.tagline-content {
+    max-width: 1100px; /* Control max width of content */
+    margin: 0 auto; /* Center the content block */
+}
+
+.tagline-section h2 {
+    font-size: 3.5rem; /* Large, bold heading */
+    font-weight: 900; /* Extra bold, use a font weight that supports this */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: var(--font-main);
+}
+
+.tagline-section img {
+    width: 80%;
+    padding-bottom: 0%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ /* --- SHOP Section Styles --- */
+.shop-section {
+    background-color: var(--main-color); /* Light green background, same as About Us or adjust */
+    padding: 80px 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.shop-container {
+    max-width: 1100px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.shop-title {
+    font-family: var(--font-main); /* Using Poppins for consistency with tagline or choose Roboto */
+    font-size: 7.8rem; /* Similar to About Us title or adjust */
+    font-weight: 900;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 50px; /* More space below title */
+    margin-top: -40px;
+}
+
+.shop-cards-container {
+    display: flex;
+    justify-content: center; /* Center cards if space allows, or use space-around */
+    align-items: stretch; /* Make cards same height if content differs */
+    gap: 15%; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens if needed */
+}
+
+.shop-card {
+    background-color: var(--second-color); /* Darker green for card background */
+    border-radius: 20px; /* Rounded corners for card */
+    padding: 30px 25px;
+    width: 400px; /* Fixed width for desktop, will adjust for mobile */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes button to bottom */
+    text-decoration: none;
+    color: inherit; /* Inherit text color, button will override */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.shop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.shop-card-icon-container {
+    margin-bottom: 25px; /* Space between icon and button */
+    width: 110%; /* Container for icon */
+    height: 190px; /* Container for icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-card-icon {
+    max-width: 160%;
+    max-height: 130%;
+    margin-bottom: -30%;
+    object-fit: contain; /* Ensure icon fits well */
+}
+
+.shop-card-button {
+    display: inline-block;
+    background-color:var(--main-color); /* Very light green for button background */
+    color: white; /* Dark green text for button, slightly different from card bg */
+    padding: 10px 25px;
+    border-radius: 50px; /* Pill shape */
+    font-weight: 500; /* Medium weight for button text */
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    text-align: center;
+    width: 80%; /* Button takes up most of the card width */
+    max-width: 200px;
+    margin-top: auto; /* Pushes button to the bottom if card content is taller */
+    transition: background-color 0.3s ease;
+}
+
+.shop-card:hover .shop-card-button {
+    background-color: #c9ddc0; /* Slightly darker on hover */
+}
+
+.banner-section {
+    width: 100%;
+}
+
+.banner-section img {
+    width: 100%;
+    height: auto;
+    max-height: 120%;
+    margin: 0 auto;
+    margin-bottom: -10%;
+}
+
+/* --- INSTAGRAM Section Styles --- */
+.instagram-section {
+       background-image: url('igbckgrnd.png'); 
+       background-position: center;
+       background-blend-mode: overlay;
+       width: 100%;/* or soft-light, multiply, depending on your image */
+       height: 130vh;
+    padding: 80px 20px;
+    position: relative; /* For potential pseudo-elements if using CSS pattern */
+}
+
+/* Optional: If you want a subtle CSS pattern instead of an image */
+/* .instagram-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%),
+        linear-gradient(-45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%);
+    background-size: 60px 60px;
+    opacity: 0.5;
+    z-index: 0;
+} */
+
+.instagram-container {
+    max-width: 1100px; /* Adjust to fit 3 embeds nicely */
+    margin: 0 auto;
+    position: relative; /* To be above the pseudo-element if used */
+    z-index: 1;
+}
+
+.instagram-title {
+    font-family: var(--font-main);
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
+    gap: 20px; /* Space between embeds */
+    height: 110vh;
+}
+
+.instagram-embed-item {
+    /* Instagram's embed CSS usually handles sizing.
+       This container helps with grid layout. */
+    background-color: #fff; /* Fallback if embed doesn't load, or for styling placeholders */
+    border-radius: 4px; /* Matches typical Instagram embed style */
+    overflow: hidden; /* To contain the embed nicely */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.instagram-embed-item blockquote.instagram-media {
+    margin: 0 auto; /* Override default blockquote margins */
+    min-width: fit-content; /* Allow it to shrink more */
+}
+
+.main-footer {
+    background-color: var(--third-color);
+    color: white;
+    padding: 40px 0 50px 0;
+    
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 6%;
+}
+.main-footer .logo {
+    color: white;
+}
+.main-footer .logo img {
+    filter: brightness(0) invert(1);
+    width: 120px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-tagline {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin-top: -10px;
+    margin-right: 7%;
+}
+.main-footer hr {
+    border: 0;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width : 90%;
+    margin-left: 4.5%;
+
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 7%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+
+/* Responsive Styles - Mobile */
+@media (max-width: 1700px){
+    .daun img{
+        display: none;
+    }
+
+    .product-card-container {
+            display: flex;
+            max-width: 100%; /* Adjust as needed */
+            width: 80%;
+            background-color:black; /* Base for rounded corners */
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* Crucial for keeping image side contained */
+            margin: auto;
+    }
+    .product-bg{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    
+    /* Optional: Adjust logo size or layout on mobile if needed */
+    /*
+    .logo-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+    .logo-text-alam { font-size: 1em; }
+    .logo-text-nusantara { font-size: 0.8em; }
+    */
+
+    /* Hero Video Mobile */
+
+
+    .video-overlay-content h1 {
+        font-size: 3.5rem; /* Smaller text for mobile */
+    }
+
+    .about-us-section img {
+    padding-bottom: 0%;
+    margin-top: 2%;
+    margin-bottom: -50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .shop-section {
+        padding: 60px 15px;
+    
+    }
+    .shop-title {
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+    }
+    .shop-cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center stacked cards */
+        gap: 25px;
+    }
+    .shop-card {
+        width: 100%; /* Cards take full width available */
+        max-width: 320px; /* Max width for cards on mobile for better appearance */
+        padding: 25px 20px;
+    }
+    .shop-card-icon-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .shop-card-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+     /* INSTAGRAM Section Mobile */
+    .instagram-section { padding: 60px 15px; }
+    .instagram-title { font-size: 2.8rem; margin-bottom: 40px; }
+    .instagram-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        gap: 25px; /* Increased gap for single column */
+    }
+    .instagram-embed-item blockquote.instagram-media {
+        /* Ensure embeds don't get too wide on mobile if their script enforces a min-width */
+        max-width: 100% !important; 
+    }
+
+     .footer-top, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-top {
+        margin-bottom: 30px;
+    }
+
+    .footer-top .logo img{
+        margin-bottom: -4px;
+        margin-left: -10%;
+    }
+
+    .main-footer hr{
+        width: 90%;
+        margin-left:4.5%;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse; 
+        margin-top: 30px;/* Icons below location */
+    }
+
+}
+
+
+@media (max-width: 1200px) { /* Slightly larger breakpoint for about us text */
+    .about-us-section h2 {
+        font-size: 7.2rem;
+    }
+    .about-us-section p {
+        font-size: 2.1rem;
+    }
+    .about-us-section img {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: -17.8%;
+    }
+      .shop-title {
+        font-size: 3.2rem;
+    }
+
+    
+    .instagram-title { font-size: 3.2rem; }
+
+    .instagram-grid {
+        grid-template-rows: repeat(2, 1fr); /* 2 columns on tablet */
+        max-height: 110vh;
+    }
+
+    
+}
+
+@media (max-width: 880px) {
+            .product-card-container {
+                flex-direction: column;
+            }
+
+            .product-info {
+                flex-basis: auto; /* Reset basis */
+                padding: 30px 20px;
+            }
+
+            .product-info h1 {
+                font-size: 2.5em;
+            }
+
+            .product-image-area {
+                flex-basis: auto; /* Reset basis */
+                padding: 0px; /* More padding for image on mobile */
+                max-height: 70%; /* Ensure some height for image area */
+                
+            }
+
+            .product-image-area img {
+                max-height: 70%;
+                max-width: 100%;
+            }
+
+            .try-now-button {
+                align-self: stretch; /* Make button full width on mobile */
+            }
+        }
+
+@media (max-width: 480px) {
+
+    .logo-icon img, .logo-icon svg {
+        width: 20%;
+        height: 2%;
+    }
+    
+    .tagline-content {
+    max-width: 1500px; /* Control max width of content */
+    margin: 0 auto; /* Center the content block */
+    }
+    
+    .tagline-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        margin-top: -30px;
+    }
+
+    
+      /* Hero Video Mobile */
+    .hero-video-section {
+        /* You might want to adjust height for mobile */
+        height: 70vh;
+        margin-top: 60px; /* Adjust if navbar height changes on mobile */
+        height: calc(100vh - 60px); /* Adjust based on mobile navbar height */
+        display: flex;
+    }
+
+    .video-overlay-content h1 {
+        font-size: 3.5rem; /* Smaller text for mobile */
+    }
+
+            
+            .daun img{
+                display: none;
+            }
+
+            .product-image-container{
+                width: 100%;
+                margin-top: 2%;
+                margin-bottom: -5%;
+            }
+
+        
+
+             .product-card-container {
+                margin-top: 10%;
+            }
+
+            .product-info h1 {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+                margin-left: 5px;
+            }
+            .product-info li {
+                font-size: 0.9em;
+            }
+            .product-info p {
+                font-size: 0.7em;
+                margin-top: -10px;
+                margin-left: 5px;
+            }
+            .try-now-button {
+                padding: 12px 20px;
+                font-size: 1em;
+                margin-bottom: -15px;
+            }
+            .about-us-section img {
+            width: 90%;
+            margin-top: 5%;
+            margin-bottom: -25.5%;
+            }
+
+            .about-us-section h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            margin-top: -15%;
+            }
+            .about-us-section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            }
+
+            .tagline-content h2{
+                font-size: 1rem;
+                margin-bottom: 7%;
+            }
+
+            .tagline-section img{
+            width: 100%;
+            margin-bottom: -4%;
+            }
+             /* SHOP Section Smaller Mobile */
+
+    .shop-section{
+        height: 90vh;
+    }
+    .shop-title {
+        font-size: 2.2rem;
+    }
+    .shop-card {
+        padding: 20px 15px;
+        max-height: 31vh;
+        max-width: 80%;
+        margin-bottom: 5%;
+    }
+    .shop-container {
+        max-height: 60vh;
+    }
+    .shop-cards-container {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+    .shop-card-icon-container {
+        width: 100%;
+        height: 50%;
+    }
+    .shop-card-button {
+        font-size: 0.85rem;
+    }
+
+    .instagram-section {
+        max-height: 100vh;
+    }
+
+    .nav-menu {
+        margin-right: 2%;
+    }
+            /* Hero Video Mobile */
+    .hero-video-section {
+        /* You might want to adjust height for mobile */
+        height: 30vh;
+        margin-top: 20px; /* Adjust if navbar height changes on mobile */
+        height: calc(80vh - 450px); /* Adjust based on mobile navbar height */
+        display: flex;
+        margin-bottom: -1%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .navbar {
+        max-width: 100%;
+        padding: 8px 0;
+    }
+    
+    .navbar-container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: -15px;
+    }
+     .nav-menu {
+        display: none; /* Hide nav menu by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 15px 0; /* Padding when open */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show when active class is added */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    /* Hamburger 'X' animation when active */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+     .instagram-title { font-size: 2.2rem; }
+
+        }
