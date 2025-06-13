@@ -987,7 +987,7 @@ html {
             /* Hero Video Mobile */
     .hero-video-section {
         /* You might want to adjust height for mobile */
-        height: 30vh;
+        height: 50vh;
         margin-top: 20px; /* Adjust if navbar height changes on mobile */
         height: calc(85vh - 350px); /* Adjust based on mobile navbar height */
         display: flex;
