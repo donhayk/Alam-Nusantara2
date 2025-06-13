@@ -562,7 +562,7 @@ html {
        background-position: center;
        background-blend-mode: overlay;
        width: 100%;/* or soft-light, multiply, depending on your image */
-       height: 130vh;
+       max-height: 150vh;
     padding: 80px 20px;
     position: relative; /* For potential pseudo-elements if using CSS pattern */
 }
