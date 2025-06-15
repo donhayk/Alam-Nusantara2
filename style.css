@@ -605,7 +605,7 @@ html {
     display: grid;
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
-    max-height: 140vh;
+    max-height: 80vh;
     margin-bottom: 20%;
 }
 
