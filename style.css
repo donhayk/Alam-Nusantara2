@@ -615,12 +615,12 @@ html {
     border-radius: 4px; /* Matches typical Instagram embed style */
     overflow: hidden; /* To contain the embed nicely */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    margin-bottom: 25%;
 }
 
 .instagram-embed-item blockquote.instagram-media {
     margin: 0 auto; /* Override default blockquote margins */
     min-width: fit-content; /* Allow it to shrink more */
+    margin-bottom:15%;
 }
 
 .main-footer {
