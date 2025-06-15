@@ -587,6 +587,7 @@ html {
     margin: 0 auto;
     position: relative; /* To be above the pseudo-element if used */
     z-index: 1;
+    padding-bottom: 15%;
 }
 
 .instagram-title {
