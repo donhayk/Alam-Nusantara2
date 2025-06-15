@@ -462,6 +462,7 @@ html {
     padding: 80px 20px;
     text-align: center;
     height: 100vh;
+    padding-bottom: 10%;
 }
 
 .shop-container {
@@ -562,10 +563,10 @@ html {
        background-position: center;
        background-blend-mode: overlay;
        width: 100%;/* or soft-light, multiply, depending on your image */
-       max-height: 135vh;
+       max-height: 150vh;
     padding: 80px 20px;
     position: relative; 
-    padding-bottom: 20%;/* For potential pseudo-elements if using CSS pattern */
+    padding-bottom: 150px;/* For potential pseudo-elements if using CSS pattern */
 }
 
 /* Optional: If you want a subtle CSS pattern instead of an image */
@@ -603,7 +604,6 @@ html {
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
     max-height: 120vh;
-    margin-bottom: 5%;
 }
 
 .instagram-embed-item {
