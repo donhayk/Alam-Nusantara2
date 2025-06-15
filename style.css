@@ -587,7 +587,6 @@ html {
     margin: 0 auto;
     position: relative; /* To be above the pseudo-element if used */
     z-index: 1;
-    max-height: 120vh;
 }
 
 .instagram-title {
@@ -604,7 +603,7 @@ html {
     display: grid;
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
-    max-height: 145vh;
+    max-height: 115vh;
 }
 
 .instagram-embed-item {
