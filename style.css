@@ -461,8 +461,7 @@ html {
     background-color: var(--main-color); /* Light green background, same as About Us or adjust */
     padding: 80px 20px;
     text-align: center;
-    height: 100vh;
-    padding-bottom: 10%;
+    height: 110vh;
 }
 
 .shop-container {
@@ -566,7 +565,7 @@ html {
        max-height: 150vh;
     padding: 80px 20px;
     position: relative; 
-    padding-bottom: 150px;/* For potential pseudo-elements if using CSS pattern */
+    padding-bottom: 450px;/* For potential pseudo-elements if using CSS pattern */
 }
 
 /* Optional: If you want a subtle CSS pattern instead of an image */
