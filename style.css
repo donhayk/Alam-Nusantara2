@@ -564,8 +564,8 @@ html {
        background-position: center;
        background-blend-mode: overlay;
        width: 100%;/* or soft-light, multiply, depending on your image */
-       max-height: 135;
-    padding: 100px 50px;
+       max-height: 135vh;
+    padding: 200px 150px;
     position: relative;
     /* For potential pseudo-elements if using CSS pattern */
 }
@@ -588,7 +588,6 @@ html {
     margin: 0 auto;
     position: relative; /* To be above the pseudo-element if used */
     z-index: 1;
-    max-height: 30vh;
 }
 
 .instagram-title {
@@ -684,7 +683,7 @@ html {
 
 
 /* Responsive Styles - Mobile */
-@media (max-width: 1500px){
+@media (max-width: 1300px){
     .daun img{
         display: none;
     }
