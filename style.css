@@ -606,7 +606,6 @@ html {
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
     max-height: 30vh;
-    margin-bottom: 20%;
 }
 
 .instagram-embed-item {
