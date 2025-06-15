@@ -559,7 +559,8 @@ html {
 
 /* --- INSTAGRAM Section Styles --- */
 .instagram-section {
-       background-color: green; 
+       background-image: url('igbckgrnd.png');
+       background-repeat: repeat;
        background-position: center;
        background-blend-mode: overlay;
        width: 100%;/* or soft-light, multiply, depending on your image */
