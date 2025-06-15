@@ -589,6 +589,7 @@ html {
     margin: 0 auto;
     position: relative; /* To be above the pseudo-element if used */
     z-index: 1;
+    max-height: 70vh;
 }
 
 .instagram-title {
@@ -620,7 +621,6 @@ html {
 .instagram-embed-item blockquote.instagram-media {
     margin: 0 auto; /* Override default blockquote margins */
     min-width: fit-content; /* Allow it to shrink more */
-    margin-bottom:15%;
 }
 
 .main-footer {
