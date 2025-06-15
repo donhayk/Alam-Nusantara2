@@ -564,10 +564,9 @@ html {
        background-position: center;
        background-blend-mode: overlay;
        width: 100%;/* or soft-light, multiply, depending on your image */
-       max-height: 165vh;
+       max-height: 100%;
     padding: 80px 20px;
     position: relative;
-    padding-bottom: 25%;
     /* For potential pseudo-elements if using CSS pattern */
 }
 
@@ -606,7 +605,7 @@ html {
     display: grid;
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
-    max-height: 30vh;
+    max-height: 100vh;
 }
 
 .instagram-embed-item {
