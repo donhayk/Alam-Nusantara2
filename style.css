@@ -565,7 +565,7 @@ html {
        max-height: 135vh;
     padding: 80px 20px;
     position: relative; 
-    padding-bottom: 15%;/* For potential pseudo-elements if using CSS pattern */
+    padding-bottom: 20%;/* For potential pseudo-elements if using CSS pattern */
 }
 
 /* Optional: If you want a subtle CSS pattern instead of an image */
@@ -602,7 +602,7 @@ html {
     display: grid;
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
-    height: 110vh;
+    max-height: 120vh;
     margin-bottom: 5%;
 }
 
