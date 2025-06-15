@@ -603,7 +603,7 @@ html {
     display: grid;
     grid-template-rows: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px; /* Space between embeds */
-    max-height: fit-content;
+    max-height: 110vh;
 }
 
 .instagram-embed-item {
